@@ -1,0 +1,50 @@
+GIT
+  remote: git@github.com:macobo/chat-adapter.git
+  revision: 4cac24e4099f202ad2bb587d68a1093ef728d757
+  specs:
+    chat-adapter (0.0.1)
+      cinch
+      colorize
+      logging
+      redcarpet
+      rest-client
+      sinatra
+      thin
+      xmpp4r
+
+GEM
+  specs:
+    cinch (2.1.0)
+    colorize (0.7.3)
+    daemons (1.1.9)
+    eventmachine (1.0.3)
+    little-plugger (1.1.3)
+    logging (1.8.2)
+      little-plugger (>= 1.1.3)
+      multi_json (>= 1.8.4)
+    mime-types (2.3)
+    multi_json (1.10.1)
+    netrc (0.7.7)
+    rack (1.5.2)
+    rack-protection (1.5.3)
+      rack
+    redcarpet (3.1.2)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    sinatra (1.4.5)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
+    tilt (1.4.1)
+    xmpp4r (0.5.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chat-adapter!
