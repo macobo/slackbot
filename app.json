@@ -1,0 +1,25 @@
+{
+    "name": "Slackbot",
+    "description": "Build your own slackbot base",
+    "website": "https://github.com/macobo/slackbot",
+    "success_url": "/",
+    "keywords": [
+        "chatbot",
+        "bot",
+        "slack",
+        "ruby"
+    ],
+    "env": {
+        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-ruby",
+        "DEPLOYED": "true",
+        "CHATBOT_NAME": "echobot",
+        "SLACK_WEBHOOK_TOKEN": {
+            "required": false,
+            "description": "(not required) Found at https://stripe.slack.com/services/new/outgoing-webhook"
+        },
+        "SLACK_API_TOKEN": {
+            "required": true,
+            "description": "Token from https://api.slack.com/#auth. Used to send private messages"
+        }
+    }
+}

@@ -27,7 +27,7 @@ bot.on_message do |message, info|
   botname, command = message.split(': ', 2)
 
   # answer the query!
-  # this stupid bot simply echoes the message back
+  # this bot simply echoes the message back
   "@#{info[:user]}: #{command}"
 end
 
