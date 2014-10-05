@@ -1,7 +1,7 @@
 
 require 'chat-adapter'
 
-def HerokuSlackAdapter < ChatAdapter::Slack
+class HerokuSlackAdapter < ChatAdapter::Slack
   def initialize
     super(nick: ENV['CHATBOT_NAME'],
       webhook_token: ENV['SLACK_WEBHOOK_TOKEN'],

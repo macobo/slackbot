@@ -1,12 +1,12 @@
 # use karl's chat-adapter library
 require 'chat-adapter'
 # also use the local HerokuSlackbot class defined in heroku.rb
-# require './heroku'
+require './heroku'
 
 # if we're on our local machine, we want to test our bot via shell, but when on
 # heroku, deploy the actual slackbot.
-if ENV['DEPLOYED_ON_HEROKU']
-  bot = HerokuSlackbot.new
+if ARGV.first == 'heroku'
+  bot = HerokuSlackAdapter.new
 else
   bot = ChatAdapter::Shell.new(nick: 'echobot')
 end

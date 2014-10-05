@@ -19,7 +19,6 @@
             "required": false,
             "description": "(not required) Found at https://stripe.slack.com/services/new/outgoing-webhook"
         },
-        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-ruby",
-        "DEPLOYED_ON_HEROKU": "true",
+        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-ruby"
     }
 }
