@@ -5,7 +5,13 @@ require 'chat-adapter'
 
 # if we're on our local machine, we want to test our bot via shell, but when on
 # heroku, deploy the actual slackbot.
-bot = ChatAdapter::Shell.new(nick: 'echobot')
+if ENV['DEPLOYED_ON_HEROKU']
+  bot = HerokuSlackbot.new
+else
+  bot = ChatAdapter::Shell.new(nick: 'echobot')
+end
+
+# Feel free to ignore this - makes logging easier
 log = ChatAdapter.log
 
 # Do this thing in this block each time the bot hears a message:
