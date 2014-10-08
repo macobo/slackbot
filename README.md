@@ -97,8 +97,8 @@ Finally, save the integration.
 * Make some changes.
 * Test on your computer with `bundle exec ruby bot.rb`.
 * Save them to git. If you're a total git beginner, this should get you started:
-  * `git add .`
-  * `git commit -am "description of what you changed"` (this description is private)
+ * `git add .`
+ * `git commit -am "description of what you changed"` (this description is private)
 * Deploy your changes with `git push heroku master`.
 * For debugging, you can look at the logs: `heroku logs -t`
 
