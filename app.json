@@ -10,7 +10,6 @@
         "ruby"
     ],
     "env": {
-        "CHATBOT_NAME": "echobot",
         "SLACK_API_TOKEN": {
             "required": true,
             "description": "Token from https://api.slack.com/#auth. Used to send private messages"

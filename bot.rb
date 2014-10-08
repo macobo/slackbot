@@ -5,8 +5,11 @@ require './heroku'
 
 # if we're on our local machine, we want to test our bot via shell, but when on
 # heroku, deploy the actual slackbot.
+# 
+# Feel free to change the name of the bot here - this controls what name the bot
+# uses when responding.
 if ARGV.first == 'heroku'
-  bot = HerokuSlackAdapter.new
+  bot = HerokuSlackAdapter.new(nick: 'echobot')
 else
   bot = ChatAdapter::Shell.new(nick: 'echobot')
 end
