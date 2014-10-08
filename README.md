@@ -5,6 +5,7 @@ This is a repo showing how you can create your own slackbot and deploy it to her
 
 There are multiple steps involved:
 
+
 1. Clone and install dependencies.
 ---
 
@@ -16,10 +17,12 @@ If that succeeded, you should be able to move to the cloned repo (`cd slackbot`)
 
 Try running `bundle install` which installs all the dependencies you need for this.
 
+
 2. Try out echobot
 ---
 
 Run `bundle exec ruby bot.rb` to run the bot locally within your command line shell.
+
 
 3. Edit `bot.rb`
 ---
@@ -27,6 +30,7 @@ Run `bundle exec ruby bot.rb` to run the bot locally within your command line sh
 The current `bot.rb` contains code for a simple bot that echoes everything back that you say to it.
 
 Make it do something else and test it!
+
 
 4a. Deploy to heroku using the heroku button
 ---
@@ -36,6 +40,7 @@ You will need an account, slack webhook set up and slack credentials ready to do
 Click on the purple button at the top and fill out the forms. Leave the `BUILDPACK_URL` fields as it currently is.
 
 Copy down the url that slack gives you and change the webhook you created to use that url.
+
 
 4b. Deploy to heroku using the command line
 ---
@@ -52,6 +57,7 @@ After that is set up, navigate on the command line to the cloned repository:
 * After doing your changes, `git commit -am "your commit message"` and `git push heroku master` deploys your bot.
 * For debugging, you can also look at the logs: `heroku logs -t`
 
+
 5. Creating webhooks
 ----
 
@@ -65,12 +71,14 @@ For trigger words, pick `yourbotname:` - this way only messages containing the b
 
 For URL(s), paste in the url heroku gave you (with the protocol and trailing slash) when you launched the instance. You can initially register the webhook without one, but you want to fill it out later.
 
+
 6. API token
 ----
 
 Due to the use of webhooks, it is not possible for the bot to normally private message users. However, slack has a separate API which enables doing exactly that.
 
 To be able to send private messages to people, go to [Slack API page](https://api.slack.com/#auth), create a API token if you didn't have one before and use that when creating your bot.
+
 
 # Addendum
 
