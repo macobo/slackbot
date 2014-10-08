@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/macobo/chat-adapter.git
-  revision: 25c70208c94f5ac867f0f20e17a8ecf1c2b47de1
-  ref: 25c70208c94f5ac867f0f20e17a8ecf1c2b47de1
+  revision: 3cce46e93a79a83ea31dd4812f541d09b54ae5cb
   specs:
     chat-adapter (0.0.1)
       cinch
