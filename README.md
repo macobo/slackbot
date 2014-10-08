@@ -49,11 +49,11 @@ If you want your bot to be able to send direct messages to people, you'll need a
 6a. Deploy to heroku using the heroku button
 ---
 
-You will need an account, slack webhook set up and slack credentials ready to do this. See the section on the very button on how to attain those.
+You will need a heroku account, which you can sign up for at www.heroku.com.
 
 Click on the purple button at the top and fill out the forms. Leave the `BUILDPACK_URL` fields as it currently is.
 
-Copy down the url that slack gives you and change the webhook you created to use that url.
+Copy down the url that slack gives you.
 
 
 6b. Deploy to heroku using the command line
