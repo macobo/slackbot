@@ -19,7 +19,7 @@ Try running `bundle install` which installs all the dependencies you need for th
 2. Try out echobot
 ---
 
-Run `ruby bot.rb` to run the bot locally within your command line shell.
+Run `bundle exec ruby bot.rb` to run the bot locally within your command line shell.
 
 3. Edit `bot.rb`
 ---
