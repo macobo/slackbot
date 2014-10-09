@@ -6,10 +6,12 @@ This is a repo showing how you can create your own slackbot and deploy it to her
 There are multiple steps involved:
 
 
-1. Clone and install dependencies.
+1. Fork, clone and install dependencies.
 ---
 
-Look to the right, you should see a `clone URL` box.
+If you want to save your awesome bot on github, first the star button and then the fork button on top right. Be aware that you do not want to push sensitive information to github though. This should redirect you to your own copy of this repository.
+
+No matter if you did the last thing, look to the right, you should see a `clone URL` box.
 
 To get this code locally, run `git clone THATURL` via the command line.
 
@@ -101,6 +103,8 @@ Finally, save the integration.
  * `git commit -am "description of what you changed"` (this description is private)
 * Deploy your changes with `git push heroku master`.
 * For debugging, you can look at the logs: `heroku logs -t`
+* Save your bot to github (if you forked) and gain awesome bragging rights:
+ * `git push origin master`
 
 
 # Addendum
